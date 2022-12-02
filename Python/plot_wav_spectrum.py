@@ -63,7 +63,7 @@ class SnapToCursor():
         self.ly.set_xdata(max_x)
         self.lx.set_ydata(max_x_y_mag)
 
-        self.txt.set_text('Freq.={0:.2f}, Magn.={1:.2f}'.format(mouseX, max_x_y_mag))
+        self.txt.set_text('Freq.={0:.2f}, Magn.={1:.2f}'.format(max_x, max_x_y_mag))
         plt.draw()
 
 def f(filename):
