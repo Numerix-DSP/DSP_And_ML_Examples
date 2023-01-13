@@ -85,13 +85,13 @@ def f(filename):
 
     plt.show()
 
-def main():
-    if (len(sys.argv) != 2):
+def main(args):
+    if (len(args) != 1):
         print ('Error: python plot_spectrum.py wav_file.wav')
         exit (1)
 
-    f (sys.argv[1])
+    f (args[0])
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])
 
